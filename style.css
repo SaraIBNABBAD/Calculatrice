@@ -1,12 +1,13 @@
 body{
     margin: 0;
-    background-image: url(fond.jpg);
+    background-image:linear-gradient(rgba(249, 192, 239, 0.356),
+    rgba(249, 169, 228, 0.438)), url(gradient-2.jpg);
     /* background-color: rgba(181, 181, 181, 0.258); */
-    background-repeat: no-repeat;
+    
     background-size: cover;
 }
 #calc{
-    margin:150px auto;
+    margin:50px auto;
     text-align: center;
     width: 20%;
     align-items: center;
@@ -79,4 +80,9 @@ button:hover{
 }
 button:active{
     transform: translateY(3px);
+}
+h1{
+    color: #ff5cac;
+    text-align: center;
+    font-size: 3em;
 }

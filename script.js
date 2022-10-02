@@ -1,6 +1,7 @@
 let btns = document.querySelectorAll("button");
 let output = document.querySelector("#ecran");
 let clear = document.querySelector("#reset");
+let supp = document.getElementById("btnsp");
 
 let waitscdValue = false;
 let frstValue=0;
@@ -55,7 +56,6 @@ btns.forEach((button=>{
             }
             output.textContent=res;
           }
-       
     })
 }))
 
@@ -67,3 +67,7 @@ function reset(){
 output.textContent=frstValue;
 }
 clear.addEventListener("click",reset);
+supp.addEventListener("click",function(index){
+  let tab=[frstValue,sign,scdValue,"=",res];
+  tab.splice(index,1);
+})
